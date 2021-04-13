@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-areas: 'nav content';
+}
+
+nav {
+	grid-area: nav;
+	background: #232323;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+nav > a {
+	margin: 5px;
+	color: silver;
+}
+nav > a:hover {
+	transition: all .3s ease-in;
+	color: white;
+}
+
+#app {
+	grid-area: content;
+	padding: 10px 20px;
+}
+#app > h1 {
+	text-transform: capitalize;
+	margin: 5px 0;
+}
+#app > p {
+	color: #232323;
+	margin: 5px 0;
+}
+#app > p > a {
+	margin: 5px 0;
+	color: #008176;
+}
+#app > p > a:hover {
+	transition: all .3s ease-in;
+	color: #005851;
+}
